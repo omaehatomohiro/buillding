@@ -1,0 +1,594 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", HelveticaNeue,"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN",Verdana, "メイリオ", Meiryo, sans-serif;
+    color:#000000;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrapper {
+    min-width: 1450px;
+    padding: 0 15px;
+    overflow-x: auto;
+    border: 5px solid #0ba29a;
+}
+
+
+h3.title {
+    font-size: 5.4rem;
+    text-transform: uppercase;
+    font-family: 'Prompt-SemiBold';
+    letter-spacing: 9px;
+    position: relative;
+}
+
+h3.title:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    background-color: #000000;
+    top: -81px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mb {
+    display: none!important;
+}
+
+.web {
+    display: block!important;
+}
+
+.d-web {
+    display: inline-block!important;
+}
+
+div#header__logo {
+    float: left;
+    position: relative;
+}
+
+div#header__nav {
+    float: right;
+    position: relative;
+}
+
+div#header__logo .logo {
+    position: absolute;
+    left: 0;
+    top: 95px;
+}
+
+header#header {
+    height: 95px;
+    /* line-height: 95px; */
+    position: relative;
+    z-index: 10;
+}
+
+div#header__logo p {
+    padding-top: 25px;
+    text-align: center;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+div#header__logo p span {
+    display: block;
+}
+
+div#header__nav .logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff100;
+    width: 139px;
+    height: 139px;
+    text-align: center;
+    padding-top: 22px;
+}
+
+.header__bar button {
+    display: none;
+}
+
+div#header__nav .logo span {
+    display: block;
+    font-weight: 500;
+    line-height: 31px;
+}
+
+div#header__nav .logo span:not(:last-child) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+div#header__nav .logo span:nth-child(2) {
+    margin-top: 6px;
+}
+
+#header__nav nav a {
+    width: 154px;
+    display: inline-block;
+    padding: 18px 5px;
+    border-right: 2px dotted #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Prompt-SemiBold';
+    cursor: pointer;
+}
+
+div#header__nav nav {
+    margin: 18px 140px 0 0;
+}
+
+#header__nav nav a:last-child {
+    border: transparent;
+}
+
+#header__nav nav a:last-child span {
+    display: block;
+    margin-top: -13px;
+}
+
+#header__nav nav a:last-child span:nth-child(2) {
+    position: relative;
+    top: 8px;
+}
+@media (max-width: 960px) {
+    .web {
+        display: none!important;
+    }
+    .mb {
+        display: block!important;
+    }
+    h3.title {
+        font-size: 7rem;
+    }
+    h3.title:before {
+        height: 100px;
+        top: -111px;
+    }
+
+    .d-web {
+        display: block!important;
+    }   
+    /*---------------------- HEADER--------------------------- */
+    header#header {
+        height: 130px;
+        position: relative;
+        z-index: 10;
+        padding-top: 14px;
+    }
+
+    .header__bar button {
+        display: block;
+    }
+
+    div#header__logo .logo img {
+        width: 168px;
+    }
+    
+    div#header__logo .logo {
+        top: 0;
+    }
+    
+    div#header__logo p {
+        padding-left: 198px;
+        text-align: left;
+        font-size: 2.9rem;
+        padding-top: 14px;
+    }
+    
+    div#header__nav .logo {
+        right: 141px;
+        width: 190px;
+        height: 125px;
+        padding-top: 34px;
+    }
+    
+    div#header__nav .logo span:not(:last-child) {
+        display: inline;
+    }
+
+    .header__bar {
+        float: right;
+    }
+    
+    .header__bar button {
+        width: 142px;
+        position: relative;
+        top: -14px;
+        right: -16px;
+        background: transparent;
+        border: transparent;
+        outline: none;
+    }
+    
+    .header__bar button span {
+        width: 80px;
+        border: 2px solid #fff;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .header__bar button span:nth-child(2) {
+        width: 55px;
+    }
+    
+    .header__bar button span:nth-child(3) {
+        width: 45px;
+    }
+
+    
+
+    /* -----------------MENU------------------ */
+    div#header__nav .nav-m {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 40px 60px;
+        /* overflow-y: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    div#header__nav .nav-m.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    div#header__nav .nav {
+        display: block; 
+    }
+    
+    #header__nav nav a {
+        width: 100%;
+        border-right: transparent;
+        border-bottom: 2px dotted #0ba29a;
+        margin: 0;
+        text-align: left;
+        font-size: 2rem;
+        position: relative;
+    }
+    
+    #header__nav nav a:last-child {
+        border-bottom: 2px dotted #0ba29a;
+        margin-bottom: 47px;
+    }
+    
+    #header__nav nav a:nth-child(1) {
+        border-top: 2px dotted #0ba29a;
+        margin-top: 33px;
+    }
+
+    div#header__nav .nav-m > a img {
+        margin: auto;
+    }
+    
+    div#header__nav nav {
+        margin: 37px auto;
+        width: 100%;
+    }
+    
+    #header__nav nav a:first-child img.mb {
+        width: 185px;
+        margin: auto;
+    }
+    
+    #header__nav nav a:last-child span {
+        display: inline;
+    }
+    
+    #header__nav nav a:last-child span:nth-child(2) {
+        top: 0;
+        left: 5px;
+    }
+
+    div#header__nav .nav-m .nav-m-btn button {
+        max-width: 720px;
+        width: 100%;
+        margin: auto;
+        height: 57px;
+        background: #fcf400;
+        font-size: 2rem;
+        border: transparent;
+        border-radius: 66px;
+    }
+    .nav-m-btn {
+        padding: 0 60px;
+        width: 100%;
+    }
+
+    #header__nav .nav-m nav a img.mb {
+        width: 20px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    button.close.mb {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        background: transparent;
+        border: transparent;
+        outline: blanchedalmond;
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    div#about__title h3.title,h3.title {
+        font-size: 2.3rem;
+        letter-spacing: 9px;
+    }
+
+    h3.title:before {
+        height: 35px;
+        top: -50px;
+    }    
+}
+
+@media (max-width: 780px) {
+    h3.title {
+        font-size: 4rem;
+    }
+    h3.title:before {
+        height: 50px;
+        top: -55px;
+    }
+    
+    header#header {
+        height: 93px;
+    }
+
+    .header__bar button {
+        right: -48px;
+    }
+
+    .header__bar button img {
+        width: 77px;
+    }
+
+    .header__bar button span {
+        width: 40px;
+        margin-bottom: 7px;
+    }
+
+    .header__bar button span:nth-child(2) {
+        width: 33px;
+    }
+
+    .header__bar button span:nth-child(3) {
+        width: 24px;
+    }
+
+    div#header__nav .logo span:not(:last-child) {
+        font-size: 1.8rem;
+    }
+    
+    div#header__nav .logo span {
+        font-size: 1.2rem;
+    }
+    
+    div#header__nav .logo {
+        width: 130px!important;
+        height: 62px!important;
+        right: 72px!important;
+        padding-top: 6px!important;
+    }
+    
+    div#header__nav .logo span:last-child {
+        line-height: 20px;
+    }
+
+    div#header__logo .logo img {
+        width: 94px;
+        height: 54px;
+    }
+    
+    div#header__logo p {
+        font-size: 2rem;
+        padding-top: 0px;
+        padding-left: 126px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    header#header {
+        height: 50px;
+        padding-top: 10px;
+        margin-bottom: 2px;
+    }
+
+    .header__bar {
+        position: absolute;
+        right: 0;
+    }
+    
+    .header__bar button {
+        padding: 0;
+        right: -12px;
+        width: unset;
+    }
+
+    div#header__logo .logo {
+        top: -7px;
+        left: -2px;
+    }
+    
+
+    .header__bar button img {
+        width: 46px;
+        height: 49px;
+    }
+    
+    .header__bar button span:nth-child(2) {
+        width: calc(55px / 3);
+    }
+
+    .header__bar button span:nth-child(3) {
+        width: calc(24px / 3);
+    }
+    
+    div#header__logo .logo img {
+        width: 59px;
+        height: 36px;
+    }
+    
+    div#header__nav .logo {
+        width: 70px!important;
+        height: 40px!important;
+        padding-top: 4px!important;
+        top: -5px!important;
+        right: 41px!important;
+    }
+
+    
+    
+    div#header__nav .logo span:not(:nth-child(7)) {
+        font-size: 1rem!important;
+        line-height: 7px!important;
+        font-weight: bold;
+        position: relative;
+        top: -4px!important;
+    }
+    
+    div#header__nav .logo span:nth-child(7) {font-size: .8rem;line-height: 7px;}
+    
+    div#header__logo p span {
+        font-size: .96rem;
+    }
+    
+    div#header__logo p {
+        padding-left: 67px;
+        padding-top: 0;
+    }
+
+    div#header__nav .nav-m .nav-m-btn button.mb {
+        max-width: 720px;
+        width: 100%;
+        margin: auto;
+        height: 57px;
+        background: #fcf400;
+        font-size: 2rem;
+        border: transparent;
+        border-radius: 66px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        overflow: hidden;
+        padding: 0 12px;
+    }
+    .nav-m-btn {
+        padding: 0 20px;
+        width: 100%;
+    }
+    
+    div#header__nav .nav-m .nav-m-btn button {
+        font-size: 1.8rem;
+    }
+    
+    #header__nav nav a {
+        font-size: 1.8rem;
+        padding: 9px 8px;
+    }
+
+    
+
+    
+    
+    div#header__nav .nav-m > a img {
+        width: 129px;
+    }
+    
+    div#header__nav .nav-m {
+        padding: 22px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header__nav .nav-m nav a img.mb {
+        width: 10px;
+    }
+
+    div#header__nav nav {
+        margin: 6px auto;
+    }
+
+    button.close.mb img {
+        width: 20px;
+    }
+    
+    button.close.mb {
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    div#about__title h3.title,h3.title {
+        font-size: 2.3rem;
+    }
+
+    h3.title:before {
+        height: 35px;
+    }    
+    
+}
+
+@media \0screen\,screen\9 {
+    #about__content .content-infor .infor :not(:first-child).infor-text span {
+        padding-top: 17px!important;
+    }
+}
+
+@media screen and (min-width:0\0) {
+    #about__content .content-infor .infor :not(:first-child).infor-text span {
+        padding-top: 17px!important;
+    }
+}   

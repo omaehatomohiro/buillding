@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* ------------------------------------------------------------ common */
+
+a:link {
+    color: #111;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #111;
+    text-decoration: none;
+}
+
+a:hover,
+a:hover img,
+input[type="submit"]:hover {
+    color: #111;
+    text-decoration: none;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+input[type="text"],
+select,
+textaera {
+    border: 1px solid #b5b5b5;
+    border-radius: inherit;
+    outline: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+}
+
+.inner {
+    width: 1100px;
+    margin: auto;
+}
+
+@media (max-width: 960px) {
+    .inner {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: 'Prompt-Bold';
+    font-weight: 700;
+    src: url(/fonts/Prompt-Bold.woff2) format('woff2'),
+        url(/fonts/Prompt-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Prompt-SemiBold';
+    font-weight: 600;
+    src: url(/fonts/Prompt-SemiBold.woff2) format('woff2'),
+        url(/fonts/Prompt-SemiBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url('/fonts/Prompt-Bold.woff') format('woff'),
+        url('/fonts/Prompt-Bold.woff2') format('woff2'),
+        url('/fonts/Prompt-Bold.svg') format('svg');
+}
