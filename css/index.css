@@ -324,6 +324,7 @@ div#scheme__content {
 #scheme .content-title p span {
     display: block;
     font-size: 2.4rem;
+    font-weight: bold;
 }
 
 #scheme .content-title {
@@ -422,6 +423,7 @@ div#merit__title {
 div#merit__title>p:nth-child(2) {
     font-size: 3.4rem;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 div#merit__title>p:last-child span {
@@ -472,6 +474,7 @@ div#merit__title>p:last-child span:not(:last-child) {
 #merit__content .box .box-infor p span {
     display: block;
     font-size: 2.2rem;
+    font-weight: bold;
 }
 
 #merit__content .wrapper-box {
@@ -559,6 +562,7 @@ div#merit__title>p:last-child span:not(:last-child) {
 #merit__content .infor .infor-text {
     margin-bottom: 70px;
 }
+
 
 div#merit__banner {}
 
@@ -1044,7 +1048,7 @@ footer#footer p {
 
     section#banner {
         background: url(/images/banner-bg-mb.jpg) no-repeat;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
     }
 
@@ -1052,11 +1056,13 @@ footer#footer p {
         top: 50%;
         bottom: unset;
         transform: translate(-50%, -50%);
+        width:160px;
     }
 
     section#banner h2#banner__infor img {
         max-width: 476px;
         width: 100%;
+
     }
 
     section#about {
@@ -1298,6 +1304,7 @@ footer#footer p {
 
     div#merit__title>p:nth-child(2) span {
         font-size: 6rem;
+        font-weight: bold;
     }
 
     div#merit__title>p:last-child span {
@@ -1328,6 +1335,7 @@ footer#footer p {
     #merit__content .box .box-infor p span {
         font-size: 5.1rem;
         text-align: center;
+        font-weight: bold;
     }
 
     #merit__content .box .box-img span.img-name {

@@ -42,6 +42,7 @@ h3.title {
     font-family: 'Prompt-SemiBold';
     letter-spacing: 9px;
     position: relative;
+    font-weight: bold;
 }
 
 h3.title:before {
